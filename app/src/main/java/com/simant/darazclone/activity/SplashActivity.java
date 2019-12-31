@@ -1,11 +1,13 @@
 package com.simant.darazclone.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 
 import com.simant.darazclone.R;
 
@@ -21,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         // set status bar color to white
-        getWindow().setStatusBarColor(Color.parseColor("#2E8B57"));
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);//  set status text dark
 
         new Handler().postDelayed(new Runnable() {
             @Override

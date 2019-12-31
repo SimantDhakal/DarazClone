@@ -1,10 +1,8 @@
 package com.simant.darazclone.fragment;
 
 
-import android.graphics.Color;
 import android.os.Bundle;
 
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -16,10 +14,10 @@ import com.simant.darazclone.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MessageFragment extends Fragment {
+public class SecondaryaccountFragment extends Fragment {
 
 
-    public MessageFragment() {
+    public SecondaryaccountFragment() {
         // Required empty public constructor
     }
 
@@ -28,10 +26,7 @@ public class MessageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_message, container, false);
-        getActivity().getWindow().setStatusBarColor(Color.parseColor("#ff724e"));
-        getActivity().getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
-        return view;
+        return inflater.inflate(R.layout.fragment_secondaryaccount, container, false);
     }
 
 }

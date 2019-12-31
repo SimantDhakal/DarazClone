@@ -16,4 +16,5 @@
     <color name="colorLogin">#00233f</color>
     <color name="colorFacebook">#4267b2</color>
     <color name="colorGoogle">#4285f4</color>
+    <color name="colorHeader_message">#ff5a35</color>
 </resources>
