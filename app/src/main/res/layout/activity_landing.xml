@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLogin"
+    tools:context=".activity.LandingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorLogin">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/landing"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/colorLogin">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create An Account"
+            android:background="@drawable/create_account_button"
+            android:textSize="18dp"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btnCreate"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="18dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#ff3a14"
+            android:textAllCaps="true"
+            android:background="@drawable/login_button"
+            android:id="@+id/btnLogin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect With Other Ways"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFacebook"
+                android:layout_weight="1"
+                android:background="@drawable/button_facebook"
+                android:layout_marginRight="6dp"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Facebook"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGoogle"
+                android:layout_weight="1"
+                android:background="@drawable/button_google"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Google"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

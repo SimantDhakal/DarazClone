@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
@@ -22,9 +21,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="top"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -35,26 +34,26 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:background="@drawable/scanner"/>
+                        android:background="@drawable/scanner" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Scan"
-                        android:textSize="10dp"/>
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
-                    android:hint="@string/search_hint"
-                    android:layout_weight="1"
-                    android:enabled="false"
                     android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
                     android:background="@drawable/search_background_home"
                     android:drawableLeft="@drawable/search_left_drawable"
-                    android:textSize="11dp"/>
+                    android:enabled="false"
+                    android:hint="@string/search_hint"
+                    android:textSize="11dp" />
 
             </LinearLayout>
 
@@ -77,23 +76,12 @@
 
             </RelativeLayout>
 
-<!--            <androidx.viewpager.widget.ViewPager-->
-<!--                android:id="@+id/pager"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="160dp" />-->
-
-<!--            <me.relex.circleindicator.CircleIndicator-->
-<!--                android:id="@+id/indicator"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="48dp"-->
-<!--                android:background="@drawable/banner"/>-->
-
             <ImageView
+                android:id="@+id/adsImage"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:id="@+id/adsImage"
                 android:background="@drawable/ads"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -109,96 +97,96 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="44dp"
-                        android:layout_height="44dp"
                         android:id="@+id/darazMall"
-                        android:background="@drawable/darazmall"/>
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/darazmall" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textColor"
                         android:padding="5dp"
-                        android:textSize="10dp"
-                        android:text="DarazMall"/>
+                        android:text="DarazMall"
+                        android:textColor="@color/textColor"
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_weight="1"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="5dp"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="44dp"
-                        android:layout_height="44dp"
                         android:id="@+id/recharge"
-                        android:background="@drawable/recharge"/>
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/recharge" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textColor"
                         android:padding="5dp"
-                        android:textSize="10dp"
-                        android:text="Recharge"/>
+                        android:text="Recharge"
+                        android:textColor="@color/textColor"
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="44dp"
-                        android:layout_height="44dp"
                         android:id="@+id/voucher"
-                        android:background="@drawable/voucher"/>
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/voucher" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textColor"
                         android:padding="5dp"
-                        android:textSize="10dp"
-                        android:text="Vouchers"/>
+                        android:text="Vouchers"
+                        android:textColor="@color/textColor"
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/groceries"
                         android:layout_width="44dp"
                         android:layout_height="44dp"
-                        android:id="@+id/groceries"
-                        android:background="@drawable/groceries"/>
+                        android:background="@drawable/groceries" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textColor"
                         android:padding="5dp"
-                        android:textSize="10dp"
-                        android:text="Groceries"/>
+                        android:text="Groceries"
+                        android:textColor="@color/textColor"
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 
@@ -211,18 +199,18 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/category"
                         android:layout_width="44dp"
                         android:layout_height="44dp"
-                        android:id="@+id/category"
-                        android:background="@drawable/category"/>
+                        android:background="@drawable/category" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/textColor"
                         android:padding="5dp"
-                        android:textSize="10dp"
-                        android:text="Categories"/>
+                        android:text="Categories"
+                        android:textColor="@color/textColor"
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 
@@ -238,27 +226,27 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Collections"
                     android:layout_weight="1"
+                    android:text="Collections"
                     android:textColor="@color/textColor"
-                    android:textSize="16dp"/>
+                    android:textSize="16dp" />
 
                 <TextView
+                    android:id="@+id/shopmore"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/shopmore"
                     android:text="Shop more >"
-                    android:textSize="12dp"
+                    android:textAllCaps="true"
                     android:textColor="@color/linkColor"
-                    android:textAllCaps="true"/>
+                    android:textSize="12dp" />
 
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView_collection"
-                android:layout_marginTop="12dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             </androidx.recyclerview.widget.RecyclerView>
@@ -267,27 +255,21 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="JUST FOR YOU"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
+                android:text="Just For You"
                 android:textAlignment="center"
                 android:textColor="@color/textColor"
-                android:layout_marginTop="20dp"
-                android:textSize="16dp"/>
+                android:textSize="16dp" />
 
-            <androidx.core.widget.NestedScrollView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_product"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerView_product"
-                    android:layout_marginTop="12dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-                </androidx.recyclerview.widget.RecyclerView>
-
-            </androidx.core.widget.NestedScrollView>
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 

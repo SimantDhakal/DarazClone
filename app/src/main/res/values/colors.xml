@@ -13,4 +13,7 @@
     <color name="textColor">#333333</color>
     <color name="linkColor">#ff6b00</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorLogin">#00233f</color>
+    <color name="colorFacebook">#4267b2</color>
+    <color name="colorGoogle">#4285f4</color>
 </resources>

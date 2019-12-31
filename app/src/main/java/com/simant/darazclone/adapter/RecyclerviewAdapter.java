@@ -44,14 +44,17 @@ public class RecyclerviewAdapter extends RecyclerView.Adapter<RecyclerviewAdapte
         Picasso.get()
                 .load("http://www.piyushp.com.np/sport_fanatic/api/member/image/daraz_image/collection/"+collectionModal.getImage())
                 .placeholder(R.drawable.ic_launcher_background)
+                .resize(180,180)
+                .centerCrop()
                 .into(holder.item_collection_image);
 
         // get Player cover
         Picasso.get()
                 .load("http://www.piyushp.com.np/sport_fanatic/api/member/image/daraz_image/collection/"+collectionModal.getBackground())
                 .placeholder(R.drawable.collection_banner)
+                .resize(180,180)
+                .centerCrop()
                 .into(holder.item_background_image);
-
 
     }
 

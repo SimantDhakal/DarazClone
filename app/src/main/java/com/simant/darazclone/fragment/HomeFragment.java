@@ -59,6 +59,9 @@ public class HomeFragment extends Fragment {
         recyclerViewCollection = view.findViewById(R.id.recyclerView_collection);
         recyclerViewProduct = view.findViewById(R.id.recyclerView_product);
 
+        recyclerViewCollection.setNestedScrollingEnabled(false);
+        recyclerViewProduct.setNestedScrollingEnabled(false);
+
         for(int i=0;i<slideImage.length;i++)
             XMENArray.add(slideImage[i]);
 
