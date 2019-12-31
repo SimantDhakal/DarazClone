@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- define color -->
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteTransparent">#80ffffff</color>
+    <color name="colorTransparent">#00555555</color>
+    <color name="colorThemeColor">#f57123</color>
+    <color name="defaultColor">#969595</color>
+    <color name="textColor">#333333</color>
+    <color name="linkColor">#ff6b00</color>
+    <color name="colorBlack">#000000</color>
+</resources>

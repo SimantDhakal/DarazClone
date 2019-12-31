@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_category">
+
+                <ImageView
+                    android:background="@drawable/wrapone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="174dp"
+                    android:id="@+id/background_collection"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/collectionTitle"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="6dp"
+                    android:text="Groceries"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="6dp"
+                    android:layout_below="@id/collectionTitle"
+                    android:textSize="11dp"
+                    android:id="@+id/collectionDes"
+                    android:text="Daraz DMart Detail"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="6dp"
+                    android:layout_below="@id/collectionDes"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="112dp"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/collectionImage"
+                        android:background="@drawable/ic_category"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
