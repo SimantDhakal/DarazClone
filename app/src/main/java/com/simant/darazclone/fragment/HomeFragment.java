@@ -89,7 +89,7 @@ public class HomeFragment extends Fragment {
         }, 2500, 2500);
 
         // call function to retrieve collection data
-        getCollection();
+//        getCollection();
         // call function to retrieve product data
         getProduct();
 

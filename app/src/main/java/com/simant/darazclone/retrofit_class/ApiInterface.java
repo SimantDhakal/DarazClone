@@ -11,13 +11,20 @@ import retrofit2.http.GET;
 public interface ApiInterface {
 
     // api from SimantDB to retrieve data from collection table
-    @GET("daraz_collection_api.php")
-    Call<TableCollectionModel> getCollection();
+//    @GET("daraz_collection_api.php")
+//    Call<TableCollectionModel> getCollection();
 
     // api from SimantDB to retrieve data from product table
 //    @GET("daraz_product_api.php")
 //    Call<List<ProductModal>> getProduct();
-    // First api from Node.JS testing
-    @GET("products")
+
+
+    // Node API for products
+    @GET("daraz_products")
     Call<List<ProductModal>> getProduct();
+
+    // Node API for collections
+    @GET("daraz_collections")
+    Call<TableCollectionModel> getCollection();
+
 }
