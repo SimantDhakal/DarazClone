@@ -1,34 +1,28 @@
 package com.simant.darazclone.fragment;
 
 import android.os.Bundle;
-
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
 import com.simant.darazclone.R;
 import com.simant.darazclone.adapter.MyAdapter;
 import com.simant.darazclone.adapter.RecyclerviewAdapter;
 import com.simant.darazclone.adapter.RecyclerviewProductAdapter;
+import com.simant.darazclone.modal.CollectionModal;
 import com.simant.darazclone.modal.ProductModal;
-import com.simant.darazclone.modal.TableCollectionModel;
 import com.simant.darazclone.retrofit_class.ApiInterface;
 import com.simant.darazclone.retrofit_class.Client;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
-
 import me.relex.circleindicator.CircleIndicator;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -99,13 +93,12 @@ public class HomeFragment extends Fragment {
     // collection json
     public void getCollection(){
         ApiInterface retrofitApiInterface = Client.getRetrofit().create(ApiInterface.class);
-        Call<TableCollectionModel> modalCollectionCall = retrofitApiInterface.getCollection();
-        // modal bata hunna kei ni
-        modalCollectionCall.enqueue(new Callback<TableCollectionModel>() {
+        Call<List<CollectionModal>> productModalCall = retrofitApiInterface.getCollection();
+        productModalCall.enqueue(new Callback<List<CollectionModal>>() {
             @Override
-            public void onResponse(Call<TableCollectionModel> call, Response<TableCollectionModel> response) {
+            public void onResponse(Call<List<CollectionModal>> call, Response<List<CollectionModal>> response) {
                 System.out.println("Collection list " + response.body());
-                RecyclerviewAdapter recyclerviewAdapter = new RecyclerviewAdapter(getActivity(),response.body().getCollectionModalList());
+                RecyclerviewAdapter recyclerviewAdapter = new RecyclerviewAdapter(getActivity(),response.body());
                 // elevation design
                 LinearLayoutManager horizontalLayoutManager = new LinearLayoutManager(getActivity(),
                         LinearLayoutManager.HORIZONTAL, false);
@@ -116,11 +109,10 @@ public class HomeFragment extends Fragment {
             }
 
             @Override
-            public void onFailure(Call<TableCollectionModel> call, Throwable t) {
+            public void onFailure(Call<List<CollectionModal>> call, Throwable t) {
 
             }
         });
-
     }
 
     // product json

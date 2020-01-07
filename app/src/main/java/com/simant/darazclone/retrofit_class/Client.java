@@ -11,9 +11,6 @@ public class Client {
 
         if (retrofit == null){
             retrofit = new Retrofit.Builder()
-                    // change base url from hosting cpanel to local url
-//                    .baseUrl("http://www.piyushp.com.np/sport_fanatic/api/member/")
-                    // local url
                     .baseUrl("http://192.168.137.1:3000/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
