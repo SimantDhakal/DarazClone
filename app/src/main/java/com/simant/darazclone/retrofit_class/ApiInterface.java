@@ -15,6 +15,9 @@ public interface ApiInterface {
     Call<TableCollectionModel> getCollection();
 
     // api from SimantDB to retrieve data from product table
-    @GET("daraz_product_api.php")
+//    @GET("daraz_product_api.php")
+//    Call<List<ProductModal>> getProduct();
+    // First api from Node.JS testing
+    @GET("products")
     Call<List<ProductModal>> getProduct();
 }
