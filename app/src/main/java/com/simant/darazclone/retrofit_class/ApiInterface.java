@@ -2,9 +2,12 @@ package com.simant.darazclone.retrofit_class;
 
 import com.simant.darazclone.modal.CollectionModal;
 import com.simant.darazclone.modal.ProductModal;
+import com.simant.darazclone.modal.UserModal;
+
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface ApiInterface {
 
@@ -15,5 +18,9 @@ public interface ApiInterface {
     // Node API for collections
     @GET("daraz_collections")
     Call<List<CollectionModal>> getCollection();
+
+    // user api
+    @GET("daraz_users/")
+    Call<List<UserModal>> getUser(@Query("phoneNo") String phoneNo);
 
 }
