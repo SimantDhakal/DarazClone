@@ -7,6 +7,8 @@ import com.simant.darazclone.modal.UserModal;
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Part;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface ApiInterface {
@@ -20,7 +22,6 @@ public interface ApiInterface {
     Call<List<CollectionModal>> getCollection();
 
     // user api
-    @GET("daraz_users/")
-    Call<List<UserModal>> getUser(@Query("phoneNo") String phoneNo);
-
+    @GET("daraz_users/{phoneNo}")
+    Call<List<UserModal>> getUser(@Path("phoneNo") String phoneNo);
 }

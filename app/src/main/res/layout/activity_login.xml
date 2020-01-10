@@ -15,7 +15,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="160dp"
             android:background="@drawable/laz_img_login_top_header"/>
 
     </LinearLayout>
@@ -75,10 +75,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:hint="Phone number"
-                        android:textSize="12dp"
+                        android:textSize="13dp"
                         android:layout_gravity="center"
                         android:textColor="@color/textColor"
                         android:layout_weight="1"
+                        android:id="@+id/etPhone"
+                        android:inputType="number"
                         android:layout_marginTop="4dp"
                         android:layout_marginBottom="4dp"
                         android:background="#00000000"/>
@@ -110,6 +112,8 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textSize="12dp"
+                        android:id="@+id/etPassword"
+                        android:inputType="textPassword"
                         android:layout_gravity="center"
                         android:textColor="@color/textColor"
                         android:layout_marginTop="4dp"
@@ -139,6 +143,7 @@
                     android:layout_height="40dp"
                     android:text="Login"
                     android:textSize="13dp"
+                    android:id="@+id/btnLogin"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
                     android:background="@drawable/create_account_button"

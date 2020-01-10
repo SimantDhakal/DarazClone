@@ -1,5 +1,6 @@
 package com.simant.darazclone.fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -31,7 +32,7 @@ public class CartFragment extends Fragment {
 
         // sharedpreference here
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        String strLoginStatus = preferences.getString("statusLogin","");
+        String strLoginStatus = preferences.getString("statusLogin", "");
 
         if (loginStatus.booleanValue() == false) {
             Intent intent = new Intent(getActivity(), LandingActivity.class);

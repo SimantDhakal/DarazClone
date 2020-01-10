@@ -45,6 +45,8 @@ public class RecyclerviewProductAdapter extends RecyclerView.Adapter<Recyclervie
                 .load("http://www.piyushp.com.np/sport_fanatic/api/member/image/daraz_image/product/"+
                         productModal.getProduct_image())
                 .placeholder(R.drawable.ic_launcher_background)
+                .resize(220, 220)
+                .centerCrop()
                 .into(holder.item_product_image);
     }
 

@@ -133,7 +133,7 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<ProductModal>> call, Throwable t) {
-
+                
             }
         });
     }
